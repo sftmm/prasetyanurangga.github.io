@@ -5,7 +5,8 @@ var main = new Vue({
   data () {
     return {
       user: [],
-      info: []
+      info: [],
+
     }
   },
   mounted () {
@@ -14,7 +15,7 @@ var main = new Vue({
         this.request_2(),
         this.request_3(),
       ])
-    .then(axios.spread((first_response, second_response, third_response) => {
+    .then(axios.spread((first_response, second_response, third_response, fourd_response) => {
            var repos_temp = [];
           first_response.data.forEach(function(repos) {
             console.log(third_response.data);
@@ -43,7 +44,7 @@ var main = new Vue({
      return axios.get('https://api.github.com/users/prasetyanurangga/repos')
     },
     request_2() {
-     return axios.get('https://api.github.com/users/prasetyanurangga')
+     return axios.get('https://prasetyanurangga.github.io/data/category.json')
     },
     request_3() {
      return axios.get('https://prasetyanurangga.github.io/data/category.json')

@@ -71,9 +71,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 d-none d-md-block">
+        <div class="col-md-4 d-none d-md-block" v-if="user.open_opportunity">
           <h3>Hire Me</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiisexplicabo inventore. <br> <a href="#">myemail@gmail.com</a></p>
+          <p> {{ user.message_opportunity }} <br> <a v-bin:href="'mailto:'+user.email">{{ user.email }}</a></p>
         </div>
       </div>
 
@@ -98,7 +98,7 @@
       <div class="container">
         <div class="row mb-5 align-items-center">
           <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-            <h2>Hey, I'm {{ user.name }}</h2>
+            <h2>Hey, I'm {{ user.nama }}</h2>
             <p class="mb-0">{{ user.bio }}</p>
           </div>
           <div class="col-md-12 col-lg-6 text-left text-lg-right" data-aos="fade-up" data-aos-delay="100">
