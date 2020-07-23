@@ -44,7 +44,7 @@ var main = new Vue({
      return axios.get('https://api.github.com/users/prasetyanurangga/repos')
     },
     request_2() {
-     return axios.get('https://prasetyanurangga.github.io/data/category.json')
+     return axios.get('https://prasetyanurangga.github.io/data/profile.json')
     },
     request_3() {
      return axios.get('https://prasetyanurangga.github.io/data/category.json')
