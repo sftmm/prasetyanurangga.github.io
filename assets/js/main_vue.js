@@ -17,6 +17,7 @@ var main = new Vue({
     .then(axios.spread((first_response, second_response, third_response) => {
            var repos_temp = [];
           first_response.data.forEach(function(repos) {
+            console.log(third_response.data);
             if(third_response.data.web.indexOf(repos.language) != -1){
               repos.category = "web"
             }
