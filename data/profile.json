@@ -1,0 +1,14 @@
+{
+	"nama" : "Angga Nur Prasetya",
+	"short_desc" : "Hey, I'm Angga",
+	"description" : "",
+	"avatar_url" : "https://avatars3.githubusercontent.com/u/35420062?v=4",
+	"url_cv" : "",
+	"skill":[
+			{"name" : "Kotlin", "value":"80"},
+			{"name" : "Java", "value":"90"},
+			{"name" : "Flutter", "value":"80"},
+			{"name" : "PHP", "value":"80"},
+			{"name" : "SQL", "value":"80"}
+	]
+}
