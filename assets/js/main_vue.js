@@ -1,7 +1,7 @@
 
 
 var main = new Vue({
-  el: '#main',
+  el: '#wrap',
   data () {
     return {
       user: [],

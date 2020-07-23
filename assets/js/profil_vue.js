@@ -1,5 +1,5 @@
 var profil = new Vue({
-  el: '#main',
+  el: '#wrap',
   data () {
     return {
       user: ""

@@ -6,7 +6,7 @@
 
   });
 var detail = new Vue({
-  el: '#main',
+  el: '#wrap',
   router,
   data () {
     return {
@@ -14,10 +14,14 @@ var detail = new Vue({
       name: "",
       email: "",
       subject: "",
-      message: ""
+      message: "",
+      user : []
     }
   },
   mounted () {
+    axios
+      .get('https://prasetyanurangga.github.io/data/profile.json')
+      .then(response => (this.user = response.data))
   },
   updated(){
   },

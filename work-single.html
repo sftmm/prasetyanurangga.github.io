@@ -37,15 +37,14 @@
 <body>
 
   <!-- ======= Navbar ======= -->
-  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+  <div id="wrap">
+    <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
     <div class="container py-2 py-md-5">
       <div class="row align-items-start">
         <div class="col-md-2">
           <ul class="custom-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li class="active"><a href="works.html">Works</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -57,10 +56,11 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 d-none d-md-block">
-          <h3>Hire Me</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiisexplicabo inventore. <br> <a href="#">myemail@gmail.com</a></p>
-        </div>
+        <div class="col-md-4 d-none d-md-block" v-if="user.open_opportunity">
+            <h3>Hire Me</h3>
+            <p> {{ user.message_opportunity }} <br> <a v-bind:href="'mailto:'+user.email">{{ user.email }}</a></p>
+          </div>
+        <div v-else></div>
       </div>
 
     </div>
@@ -183,6 +183,7 @@
   </footer>
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
