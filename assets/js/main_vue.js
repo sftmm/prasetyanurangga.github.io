@@ -45,7 +45,7 @@ var main = new Vue({
      return axios.get('https://api.github.com/users/prasetyanurangga')
     },
     request_3() {
-     return axios.get('https://raw.githubusercontent.com/prasetyanurangga/prasetyanurangga.github.io/master/data/category.json')
+     return axios.get('http://my-json-server.typicode.com/prasetyanurangga/api_server/category_repos')
     },
     callIsotope() {
       var $container = $('#portfolio-grid').isotope({

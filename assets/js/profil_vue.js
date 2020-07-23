@@ -7,7 +7,7 @@ var profil = new Vue({
   },
   mounted () {
     axios
-      .get('https://raw.githubusercontent.com/prasetyanurangga/prasetyanurangga.github.io/master/data/profile.json')
+      .get('http://my-json-server.typicode.com/prasetyanurangga/api_server/user_repos')
       .then(response => (this.user = response.data))
   },
   updated(){
