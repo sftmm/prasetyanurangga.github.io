@@ -546,14 +546,14 @@ a.go-down-arrow {
   min-height: 365px!important;
 }
 
-@media (min-width: 450px){
+@media (max-width: 450px){
   .custom-navbar {
     padding-top: 0px;
     width: 100%;
   }
 }
 
-@media (min-width: 570px){
+@media (max-width: 570px){
   footer {
     text-align: center;
   }
