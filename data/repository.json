@@ -1,0 +1,15 @@
+[
+	{
+		"name_git" : "KertasPustih",
+		"name" : "Kertas Pustih",
+		"type" : "Mobile",
+		"language" : {
+			"name" : "Kotlin",
+			"color" : "#F18E33",
+			"value" : "100"
+		},
+		"photo" : [
+			""
+		],
+	}
+]

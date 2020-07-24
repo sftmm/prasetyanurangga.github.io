@@ -83,7 +83,6 @@
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-6" data-aos="fade-up">
-            <h2>Detail Project</h2>
           </div>
         </div>
       </div>
@@ -100,20 +99,16 @@
                 <p class="mb-4"><span class="text-muted">{{ repos.language }}</span></p>
 
                 <div class="mb-5">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores illo, id recusandae molestias
-                    illum unde pariatur, enim tempora.</p>
+                  <p>{{ repos.description }}</p>
 
                 </div>
 
-                <h4 class="h4 mb-3">What I did</h4>
+                <h4 class="h4 mb-3">Created Date</h4>
                 <ul class="list-unstyled list-line mb-5">
-                  <li>Design</li>
-                  <li>HTML5/CSS3</li>
-                  <li>CMS</li>
-                  <li>Logo</li>
+                  <li>{{ repos.created_at }}</li>
                 </ul>
 
-                <p><a v-bind:href="repos.html_url" class="readmore">Visit Website</a></p>
+                <p><a v-bind:href="repos.html_url" class="readmore">More Information</a></p>
               </div>
             </div>
           </div>

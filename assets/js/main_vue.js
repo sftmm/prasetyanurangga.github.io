@@ -22,10 +22,10 @@ var main = new Vue({
            var repos_temp = [];
           first_response.data.forEach(function(repos) {
             console.log(third_response.data);
-            if(third_response.data.web.indexOf(repos.language) != -1){
+            if(third_response.data.web.indexOf(repos.name) != -1){
               repos.category = "web"
             }
-            else if(third_response.data.mobile.indexOf(repos.language) != -1)
+            else if(third_response.data.mobile.indexOf(repos.name) != -1)
             {
               repos.category = "mobile";
             }
@@ -81,6 +81,11 @@ var main = new Vue({
         $('#filters a').removeClass('active');
         $(this).addClass('active');
       });
+    },
+    scroll_to_down(){
+      document.getElementById("portfolio").scrollIntoView({
+        behavior : 'smooth'
+      })
     },
     detail(id){
       this.$router.push({ path: '/work-single.html', params: { id } })

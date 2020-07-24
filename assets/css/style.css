@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .section {
-  padding: 7rem 0;
+  padding: 3rem 0 7rem 0;
 }
 
 .filters a {
@@ -504,6 +504,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 a.go-down-arrow {
+  cursor: pointer;
     background: url('../img/download.svg') no-repeat;
     background-color: transparent;
     width: 50px;
