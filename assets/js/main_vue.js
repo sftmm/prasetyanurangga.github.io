@@ -18,24 +18,8 @@ var main = new Vue({
         this.request_2(),
         this.request_3(),
       ])
-    .then(axios.spread((first_response, second_response, third_response, fourd_response) => {
-           var repos_temp = [];
-          first_response.data.forEach(function(repos) {
-            console.log(third_response.data);
-            if(third_response.data.web.indexOf(repos.name) != -1){
-              repos.category = "web"
-            }
-            else if(third_response.data.mobile.indexOf(repos.name) != -1)
-            {
-              repos.category = "mobile";
-            }
-            else
-            {
-              repos.category = "other";
-            }
-            repos_temp.push(repos)
-          });
-          this.info= repos_temp;
+    .then(axios.spread((first_response, second_response, third_response) => {
+          this.info= first_response.data;
           this.user =  second_response.data
     }))
     let loader = this.$loading.show({
