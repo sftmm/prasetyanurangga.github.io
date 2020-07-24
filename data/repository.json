@@ -3,11 +3,11 @@
 		"name_git" : "KertasPutih",
 		"name" : "Kertas Putih",
 		"type" : "Mobile",
-		"language" : {
+		"language" : [{
 			"name" : "Kotlin",
 			"color" : "#F18E33",
 			"value" : "100"
-		},
+		}],
 		"main_photo" : "https://prasetyanurangga.github.io/assets/img/img_1.jpg",
 		"photo" : ["hhh","fff"]
 	}

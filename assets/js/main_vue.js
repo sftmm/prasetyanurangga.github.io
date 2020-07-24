@@ -1,4 +1,3 @@
-Vue.use(VueLoading);
 
 var main = new Vue({
   el: '#wrap',
@@ -9,10 +8,7 @@ var main = new Vue({
       visible : false
     }
   },
-  components: {
-        Loading: VueLoading
-  },
-  mounted () {
+  created () {
     axios.all([
         this.request_1(), //or direct the axios request
         this.request_2(),
@@ -22,10 +18,6 @@ var main = new Vue({
           this.info= first_response.data;
           this.user =  second_response.data
     }))
-    let loader = this.$loading.show({
-        loader: 'dots'
-    });
-    setTimeout(() => loader.hide(), 3 * 1000)
   },
   updated(){
     this.callIsotope();

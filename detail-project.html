@@ -108,6 +108,19 @@
                   <li>{{ repos.updated_at }}</li>
                 </ul>
 
+                <h3 class="h3 mb-4">Languages</h3>
+                <ul class="list-unstyled">
+                  <li class="mb-3" v-for=" in local_repos.language">
+                    <div class="d-flex mb-1">
+                      <strong>{{ language.name }}</strong>
+                      <span class="ml-auto">{{ language.value }}%</span>
+                    </div>
+                    <div class="progress custom-progress">
+                      <div class="progress-bar" role="progressbar" v-bind:style="{ width: language.value + '%' }" v-bind:aria-valuenow="language.value" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </li>
+                </ul>
+
                 <p><a v-bind:href="repos.html_url" class="readmore">More Information</a></p>
               </div>
             </div>
