@@ -32,7 +32,7 @@ var main = new Vue({
   },
   methods:{
     request_1() {
-     return axios.get('https://api.github.com/users/prasetyanurangga/repos')
+     return axios.get('https://prasetyanurangga.github.io/data/repository.json')
     },
     request_2() {
      return axios.get('https://prasetyanurangga.github.io/data/profile.json')
