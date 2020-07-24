@@ -552,3 +552,9 @@ a.go-down-arrow {
     width: 100%;
   }
 }
+
+@media (min-width: 570px){
+  footer {
+    text-align: center;
+  }
+}
