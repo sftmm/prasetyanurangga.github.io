@@ -512,7 +512,7 @@ a.go-down-arrow {
     background-size: 100%;
     position: absolute;
     left: 50%;
-    bottom: 10px;
+    bottom: 15px;
     margin-left: -22px;
     z-index: 4;
     opacity: .9;
@@ -534,10 +534,10 @@ a.go-down-arrow {
 
 @keyframes bounceball{
   0% {
-      bottom: 10px;
+      bottom: 15px;
   }
   100% {
-      bottom: 17px;
+      bottom: 22px;
   }
 
 }
