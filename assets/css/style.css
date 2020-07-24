@@ -400,7 +400,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .custom-navbar .navbar-brand {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 /* Burger */
@@ -501,4 +501,42 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 .social a:hover {
   color: #000;
+}
+
+a.go-down-arrow {
+    background: url('../img/download.svg') no-repeat;
+    background-color: transparent;
+    width: 50px;
+    height: 45px;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -22px;
+    z-index: 4;
+    opacity: .9;
+    -webkit-animation-name: bounceball;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-delay: 0;
+    -webkit-animation-timing-function: ease-out;
+    animation-name: bounceball;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0;
+    timing-function: ease-out;
+    animation-play-state: running;
+    animation-fill-mode: none;
+}
+
+@keyframes bounceball{
+  0% {
+      bottom: 10px;
+  }
+  100% {
+      bottom: 17px;
+  }
+
 }
