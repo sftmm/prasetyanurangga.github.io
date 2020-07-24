@@ -22,9 +22,18 @@ var detail = new Vue({
         this.request_3(),
       ])
     .then(axios.spread((first_response, second_response, third_response) => {
-          this.repos= first_response.data;
-          this.user =  second_response.data;
-          this.local_repos = third_response;
+      var local_repos = [];
+      third_response.forEach(
+        function filtering(repos, index, array)
+        {
+          if(repos.name_git == first_response.data.name){
+            local_repos.push(repos);
+          }
+        }
+      );
+      this.repos= first_response.data;
+      this.user =  second_response.data;
+      this.local_repos = local_repos;
     }))
   },
   updated(){
