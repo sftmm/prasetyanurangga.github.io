@@ -545,3 +545,10 @@ a.go-down-arrow {
 #portfolio-grid{
   min-height: 365px!important;
 }
+
+@media (min-width: 450px){
+  .custom-navbar {
+    padding-top: 0px;
+    width: 100%;
+  }
+}
