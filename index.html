@@ -118,7 +118,7 @@
               <div id="filters" class="filters">
                 <a href="#" data-filter="*" class="active">All</a>
                 <a href="#" data-filter=".web">Web</a>
-                <a href="#" data-filter=".mobile">Mobile</a>
+                <a href="#" data-filter=".Mobile">Mobile</a>
                 <a href="#" data-filter=".other">Other</a>
               </div>
             </div>
@@ -129,7 +129,7 @@
              <a v-bind:href="'detail-project.html?name='+ repos.name_git" class="item-wrap fancybox">
                 <div class="work-info">
                   <h3>{{ repos.name }}</h3>
-                  <span>{{ repos.language.name }}</span>
+                  <span>{{ repos.type }}</span>
                 </div>
                 <img class="img-fluid" v-bind:src="repos.main_photo">
               </a>
