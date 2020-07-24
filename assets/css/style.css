@@ -548,7 +548,7 @@ a.go-down-arrow {
 
 @media (max-width: 460px){
   .custom-navbar {
-    padding-top: 10px;
+    padding-top: 0.5rem;
     width: 100%;
   }
   footer {
