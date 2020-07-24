@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>MyPortfolio Bootstrap Template - Index</title>
+  <title>MyPortfolio - Index</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -115,7 +115,7 @@
           <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
             
             <div class="item col-sm-6 col-md-4 col-lg-4 mb-4" v-for="repos in info" :class="repos.category" >
-             <a v-bind:href="'work-single.html?name='+ repos.name" class="item-wrap fancybox">
+             <a v-bind:href="'detail-project.html?name='+ repos.name" class="item-wrap fancybox">
                 <div class="work-info">
                   <h3>{{ repos.name }}</h3>
                   <span>{{ repos.language }}</span>
