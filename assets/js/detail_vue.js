@@ -11,6 +11,7 @@ var detail = new Vue({
   data () {
     return {
       repos: [],
+      local_repos: [],
       user: []
     }
   },
@@ -18,10 +19,12 @@ var detail = new Vue({
     axios.all([
         this.request_1(), //or direct the axios request
         this.request_2(),
+        this.request_3(),
       ])
-    .then(axios.spread((first_response, second_response) => {
+    .then(axios.spread((first_response, second_response, third_response) => {
           this.repos= first_response.data;
-          this.user =  second_response.data
+          this.user =  second_response.data;
+          this.local_repos = third_response;
     }))
   },
   updated(){
@@ -33,6 +36,9 @@ var detail = new Vue({
     },
     request_2() {
      return axios.get('https://prasetyanurangga.github.io/data/profile.json')
+    },
+    request_3() {
+     return axios.get('https://prasetyanurangga.github.io/data/repository.json')
     },
   }
 })
